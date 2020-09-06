@@ -1,0 +1,132 @@
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --mainblue : #BFD7ED;
+  --yellowTrans: rgb(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #e994ab;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #e994ab;
+  font-weight: 400;
+  margin-bottom: 30px;
+} 
+
+
+.slide{
+animation-name: slide;
+-webkit-animation-name: slide;
+animation-duration: 1s;
+-webkit-animation-duration: 1s;
+visibility: visible;
+}
+
+@keyframes slide {
+0% {
+  opacity: 0;
+  transform: translateY(70%);
+} 
+100% {
+  opacity: 1;
+  transform: translateY(0%);
+}
+}
+@-webkit-keyframes slide {
+0% {
+  opacity: 0;
+  -webkit-transform: translateY(70%);
+} 
+100% {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+}
+}
+@media screen and (max-width: 768px) {
+.col-sm-4 {
+  text-align: center;
+  margin: 25px 0;
+}
+.btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+}
+}
+@media screen and (max-width: 480px) {
+.logo {
+    font-size: 150px;
+}
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.jumbotron {
+  background-color: pink;
+  color: #fff;
+  padding: 100px 25px;
+  font-family: Montserrat, sans-serif;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: pink;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4511e !important;
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+}
+
+footer .glyphicon{
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: pink;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+.logo-small {
+  color: #000000;
+  font-size: 50px;
+}
+.logo {
+  padding-top: 25px;
+  color: pink;
+  font-size: 200px;
+}
