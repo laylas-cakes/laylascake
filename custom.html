@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<link href="/Users/sara/Desktop/LAYLA'S WEBSIT/css/custom.css" rel="stylesheet" type="text/css">
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ORDER NOW!</title>
+  </head>
+  <body class='custom'>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg px-4">
+        <!-- 
+          https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
+          Creative Commons (Attribution 3.0 Unported);
+          https://www.iconfinder.com/korawan_m
+               -->
+               <a href="#" class="navrbar-brand">
+                 <img src="img/logo.svg" alt="small icon">
+               </a>
+                
+    
+    </div>
+    <div id="pricing" class="container-fluid">
+      <div class="text-center">
+        <h2>Customize It</h2>
+      </div>
+      <div class="row slideanim">
+        <div class="col-sm-4 cols-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h3>Flavors</h3>
+            </div>
+            <div class="panel-body">
+              <p>Strawberry Cream Cheese</p>
+              <p>Chocolate Fudge</p>
+              <p>Confetti Cake</p>
+              <p>Yellow Cake</p>
+              <p>Red Velvet Cream Cheese</p>
+            </div>
+            <div class="panel-footer">
+              <h3><br><br>Choose from a wide variety of flavors and colors!</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 cols-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h3>Size</h3>
+            </div>
+            <div class="panel-body">
+              <p><strong>Round cakes:</strong> 8" (serves 15-12), 10" (serves 23-33), 12" (serves 34-47),
+                14" (serves 46-64), 16" (serves 60-83), 18" (serves 76-105)<br>
+                <strong>Square cakes:</strong> 8" (serves 15-12), 10" (serves 23-33), 12" (serves 34-47),
+                14" (serves 46-64), 16" (serves 60-83)<br>
+                <strong>Sheetcakes and cupcakes available upon request.</strong></p>
+                
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 cols-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h3>Design your cake and eat it too</h3>
+            </div>
+            <div class="panel-body">
+          <p>Have an idea that you don't see listed? We are open to your suggestions
+          and creativity. Or if you aren't quite sure what you need, we are here
+           guide you. Let us know what you're thinking.
+          </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="container-fluid bg-grey">
+      <h2 class="text-center">CONTACT US</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <p>Contact us and we'll get back to you within 24 hours.</p>
+
+          <p><span class="glyphicon glyphicon-phone"></span> +123 456 789</p>
+          <p><span class="glyphicon glyphicon-envelope"></span>Email@Email.Com</p>
+        </div>
+        <div class="col-sm-7 slideanim">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <script>
+    $(document).ready(function(){
+      $(".navbar a, footer a[href='#myPage']").on('click',function(event){
+        event.preventDefault();
+         var hash = this.hash;
+  
+         $('html, body').animate({
+           scrollTop: $(hash).offset().top
+         }, 900, function(){
+           window.location.hash = hash;
+         });
+      });
+  
+      $(window).scroll(function(){
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+  
+          var winTop = $(window).scrollTop();
+            if(pos < winTop + 600){
+              $(this).addClass("slide");
+            }
+        });
+      });
+  
+      $(function(){
+        $('#myCarousel').carousel();
+      })
+  
+    })
+  </script>
+  </body>
+  </html>
